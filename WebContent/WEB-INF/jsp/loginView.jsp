@@ -14,7 +14,9 @@ background-color:#a9a9a9;
 </head>
 <body style="background-color:#fffacd;">
 <header>
-<h2 >ActionLogger by Iwase</h2>
-</header>2
+<h2 >ActionLogger</h2>
+</header>
 </body>
+<form action="/ActionLogger/logincheck" method="post">
+<p>ユーザー名<br> <input type="text" name="userid" placeholder="名前" required autofocus></p>
 </html>
