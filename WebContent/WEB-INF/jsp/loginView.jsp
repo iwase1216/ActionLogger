@@ -9,14 +9,31 @@
 <style>
 header{
 background-color:#a9a9a9;
+  text-align: center
+}
+div{height:500px;}
+body{
+text-align:center;
+
+
 }
 </style>
 </head>
 <body style="background-color:#fffacd;">
 <header>
-<h2 >ActionLogger</h2>
+
+   <h2 >ActionLogger　　by KBC</h2>
+
 </header>
-</body>
 <form action="/ActionLogger/logincheck" method="post">
-<p>ユーザー名<br> <input type="text" name="userid" placeholder="名前" required autofocus></p>
+<div>
+<br><h2>ユーザー名</h2><input type="text" name="userid" placeholder="名前" required autofocus>
+<br><h2>パスワード</h2><input type="password" name="password" placeholder="パスワード" required>
+<br>
+<br>
+<input type="submit" name="submit" value="送信">
+</div>
+
+<a href="/ActionLogger/AddUser">新規登録はこちら</a>
+</body>
 </html>
