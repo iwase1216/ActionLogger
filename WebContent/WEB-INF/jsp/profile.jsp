@@ -1,13 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
-
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!doctype html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>ActionLogger ログイン</title>
+<title>プロフィール</title>
 
 <!-- Bootstrap core CSS -->
 <link
@@ -45,24 +44,29 @@
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-８">
-			<form class="form-signin" action="/ActionLogger/logincheck"
-				method="post">
-				<h4 h3 mb-3 font-weight-normal>AcctionLoggerログイン</h4>
-				<div class="form-group">
+			<h1 h3 mb-3 font-weight-normal>プロフィール確認</h1>
+			<br>
+			<h2>ユーザーID:</h2>
+			<table border="1">
+			<tr><td width="200">${userid}</tr>
+			</table>
+			<br/>
+			
+			<h2>一言コメント：</h2>
+			<table border="1">
+			<tr><td width="200">${com}</td></tr>
+			</table>
+			<br/>
 
-					ユーザー名<br> <input type="text" class="form-control"
-						name="userid" placeholder="username" required autofocus>
-					パスワード<br> <input type="password" class="form-control"
-						name="password" placeholder="パスワード" required>
-				</div>
-				<input type="submit" class="btn btn-secondary btn-block btn-lg"
-					id="login" value="ログイン"></input>
-			</form>
-			<a href="/ActionLogger/adduser">新規登録</a>
+			<%-- ${errorData.message}<br> --%>
+			<%-- <a href="${errorData.link}">${errorData.linkStr}</a> --%>
+
+			<a href="/ActionLogger/">戻る</a>
 
 		</div>
 		<div class="col"></div>
 
 	</div>
 </body>
+
 </html>

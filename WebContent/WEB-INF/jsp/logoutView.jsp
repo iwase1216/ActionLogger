@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>ActionLogger ログイン</title>
+<title>ActionLogger ログアウト</title>
 
 <!-- Bootstrap core CSS -->
 <link
@@ -35,6 +35,15 @@
 </style>
 <!-- Custom styles for this template -->
 <link href="/GuiWork/css/dashboard.css" rel="stylesheet">
+
+<script>
+window.history.pushState(null, null, null);
+window.addEventListener("popstate", function() {
+  window.history.pushState(null, null, null);
+  return;
+});
+</script>
+
 </head>
 <body>
 	<nav
@@ -45,24 +54,17 @@
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-８">
-			<form class="form-signin" action="/ActionLogger/logincheck"
-				method="post">
-				<h4 h3 mb-3 font-weight-normal>AcctionLoggerログイン</h4>
-				<div class="form-group">
-
-					ユーザー名<br> <input type="text" class="form-control"
-						name="userid" placeholder="username" required autofocus>
-					パスワード<br> <input type="password" class="form-control"
-						name="password" placeholder="パスワード" required>
-				</div>
-				<input type="submit" class="btn btn-secondary btn-block btn-lg"
-					id="login" value="ログイン"></input>
-			</form>
-			<a href="/ActionLogger/adduser">新規登録</a>
+			<h4 h3 mb-3 font-weight-normal>AcctionLoggerログアウト</h4>
+			<br>
+			
+			<p>ログアウトしました</p>
+			<br>
+			<a href="/ActionLogger/LoginPage.java">ログインページへ</a>
 
 		</div>
 		<div class="col"></div>
 
 	</div>
 </body>
+
 </html>

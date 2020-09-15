@@ -45,24 +45,20 @@
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-８">
-			<form class="form-signin" action="/ActionLogger/logincheck"
-				method="post">
-				<h4 h3 mb-3 font-weight-normal>AcctionLoggerログイン</h4>
-				<div class="form-group">
+			<h4 h3 mb-3 font-weight-normal>エラー</h4>
+			<br>
+			<p>エラーが発生しました。</p>
 
-					ユーザー名<br> <input type="text" class="form-control"
-						name="userid" placeholder="username" required autofocus>
-					パスワード<br> <input type="password" class="form-control"
-						name="password" placeholder="パスワード" required>
-				</div>
-				<input type="submit" class="btn btn-secondary btn-block btn-lg"
-					id="login" value="ログイン"></input>
-			</form>
-			<a href="/ActionLogger/adduser">新規登録</a>
+			<%-- ${errorData.message}<br> --%>
+			<%-- <a href="${errorData.link}">${errorData.linkStr}</a> --%>
+
+
+			<a href="/ActionLogger/src/java/servlet/LoginPage.java">ログインページへ戻る</a>
 
 		</div>
 		<div class="col"></div>
 
 	</div>
 </body>
+
 </html>
